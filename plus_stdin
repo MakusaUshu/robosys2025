@@ -1,0 +1,12 @@
+#!/usr/bin/pytho3
+# SPDX-FileCopyrightText:zuojiujianxiu3@gmail.com
+import  sys
+
+ans = 0
+for line in sys.stdin:
+    try:
+        ans += int(line)
+    except:
+        ans += float(line)
+
+print(ans)
